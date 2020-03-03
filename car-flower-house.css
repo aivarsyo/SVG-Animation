@@ -1,0 +1,45 @@
+body{
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+}
+
+.window{
+    fill: rgb(78, 195, 216);
+}
+
+#light{
+    fill: yellow;
+}
+
+#car {
+    transform:scale(0.6,0.6) translate(1450px, 350px);
+}
+
+.carMoves{
+    animation-name: carMoves;
+    animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes carMoves {
+    to {
+        transform:scale(0.6,0.6) translate(600px, 350px);
+    }
+  }
+
+#flower > *{
+    transform:scale(0.6,0.6) translate(750px, 350px);
+}
+
+#person>path{
+    display: none;
+    transform:scale(0.2,0.2) translate(2550px, 1550px);
+    animation-name: personMoves;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes personMoves {
+    to {
+        transform:scale(0.2,0.2) translate(1150px, 1550px);
+    }
+  }
